@@ -3,310 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Park</title>
+    <title>Alif Park - Parking</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body class="font-poppins text-[#070625]">
+  <base target="_blank">
+</head>
+  <body class="font-poppins text-[#070625] bg-[#F0F0F5] min-h-screen">
+    <!-- Wrapper: mobile container on desktop -->
     <section
       id="content"
-      class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-[#FBFBFB] overflow-x-hidden relative">
+      class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-[#FBFBFB] overflow-x-hidden relative shadow-2xl">
+
       <div class="bg-white w-full h-[148px] absolute top-0"></div>
+
       <div class="gap-6 flex flex-col w-full pb-16 z-10">
-        <!-- head content -->
+        <!-- ===== HEADER ===== -->
         <div class="flex flex-col justify-center items-center gap-5 p-[16px_20px]">
           <div class="flex justify-center items-center w-full">
-            <div class="flex justify-center items-center w-[24px] h-[24px]">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.57 5.93005L3.5 12.0001L9.57 18.0701"
-                  stroke="#070625"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M20.4999 12H3.66992"
-                  stroke="#070625"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
+            <!-- Back Button -->
+            <a href="index.html" class="flex justify-center items-center w-[24px] h-[24px] shrink-0 hover:opacity-70 transition-opacity">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke="#070625" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.4999 12H3.66992" stroke="#070625" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </div>
-            <div class="flex flex-col w-full justify-center items-center">
-              <p class="text-lg text-[#070625] font-semibold w-full text-center">Angga Park</p>
+            </a>
+
+            <!-- Title & Info -->
+            <div class="flex flex-col w-full justify-center items-center px-4">
+              <p class="text-lg text-[#070625] font-semibold w-full text-center">Alif Park</p>
               <div class="flex items-center gap-[10px]">
                 <div class="flex items-center gap-1 text-[#9F9FB5]">
-                  <svg
-                    width="17"
-                    height="16"
-                    viewBox="0 0 17 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5" />
-                    <path
-                      d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5" />
-                    <path
-                      d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M4.15748 3.66665H4.16518"
-                      stroke="#9F9FB5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M12.8241 11.6666H12.8318"
-                      stroke="#9F9FB5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z" stroke="#9F9FB5" stroke-width="1.5"/>
+                    <path d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z" stroke="#9F9FB5" stroke-width="1.5"/>
+                    <path d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.15748 3.66665H4.16518" stroke="#9F9FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.8241 11.6666H12.8318" stroke="#9F9FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p>1.3km</p>
+                  <p class="text-sm">1.3km</p>
                 </div>
                 <div class="flex items-center gap-1 text-[#9F9FB5]">
-                  <svg
-                    width="17"
-                    height="16"
-                    viewBox="0 0 17 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M8.5 4V12"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z"
-                      stroke="#9F9FB5"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 4V12" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p>$5/hr</p>
+                  <p class="text-sm">$5/hr</p>
                 </div>
               </div>
             </div>
-            <div class="flex justify-center items-center w-[24px] h-[24px]">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
-                  stroke="#070625"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
+
+            <!-- Favorite -->
+            <button class="flex justify-center items-center w-[24px] h-[24px] shrink-0 hover:scale-110 transition-transform" onclick="toggleHeart(this)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="heart-icon">
+                <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" stroke="#070625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </div>
+            </button>
           </div>
-          <div class="flex justify-between w-full gap-[14px]">
-            <button
-              type="submit"
-              class="bg-[#4041DA] p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center">
+
+          <!-- Floor Tabs -->
+          <div class="flex justify-between w-full gap-[10px] sm:gap-[14px]">
+            <button type="button" class="floor-tab bg-[#4041DA] p-[12px_16px] sm:p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center hover:opacity-90 transition-opacity active" data-floor="basement">
               <p class="font-semibold text-sm leading-[17px] text-white">Basement</p>
             </button>
-            <button
-              type="submit"
-              class="bg-[#04031F] p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center">
+            <button type="button" class="floor-tab bg-[#04031F] p-[12px_16px] sm:p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center hover:opacity-90 transition-opacity" data-floor="ground">
               <p class="font-semibold text-sm leading-[17px] text-white">Ground</p>
             </button>
-            <button
-              type="submit"
-              class="bg-[#04031F] p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center">
+            <button type="button" class="floor-tab bg-[#04031F] p-[12px_16px] sm:p-[12px_20px] w-full h-12 flex items-center gap-3 rounded-[50px] justify-center hover:opacity-90 transition-opacity" data-floor="top">
               <p class="font-semibold text-sm leading-[17px] text-white">Top Floor</p>
             </button>
           </div>
         </div>
-        <!-- content -->
-        <div class="bg-transparent rounded-xl overflow-hidden p-4 flex flex-col gap-6 mb-[65px]">
-          <div class="flex justify-between gap-[26px]">
-            <div class="border-dashed border-x-4 border-[#ECECEF] w-[50px] ml-[30px]"></div>
 
-            <div class="flex flex-col gap-10 w-full mb-[58px]">
-              <div class="flex flex-col gap-5">
-                <div class="flex gap-3">
-                  <p
-                    class="flex rounded-xl items-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-fit">
-                    A
-                  </p>
+        <!-- ===== PARKING LOTS CONTENT ===== -->
+        <div class="bg-transparent rounded-xl overflow-hidden p-4 flex flex-col gap-6 mb-[100px] sm:mb-[65px]">
+          <div class="flex justify-between gap-[26px]">
+            <!-- Road Line -->
+            <div class="border-dashed border-x-4 border-[#ECECEF] w-[30px] sm:w-[50px] ml-[20px] sm:ml-[30px] shrink-0"></div>
+
+            <!-- Parking Grid -->
+            <div class="flex flex-col gap-10 w-full mb-[58px]" id="parking-grid">
+              <!-- Section A -->
+              <div class="flex flex-col gap-5 parking-section" data-section="A">
+                <div class="flex gap-3 items-center">
+                  <p class="flex rounded-xl items-center justify-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-[50px] h-[50px] font-bold text-lg shadow-sm">A</p>
                   <div class="flex items-center gap-1 text-[#9F9FB5]">
-                    <p>Parking Lots</p>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        opacity="0.4"
-                        d="M16.77 18.98H7.23C6.81 18.98 6.43 18.71 6.29 18.32L2.13 6.67001C1.8 5.74001 2.86 4.95001 3.65 5.52001L7.65 8.38001C8.18 8.76001 8.94 8.53001 9.17 7.92001L11.06 2.88001C11.38 2.01001 12.61 2.01001 12.93 2.88001L14.82 7.92001C15.05 8.54001 15.8 8.76001 16.34 8.38001L20.34 5.52001C21.14 4.95001 22.19 5.75001 21.86 6.67001L17.7 18.32C17.57 18.71 17.19 18.98 16.77 18.98Z"
-                        fill="#3F46F9" />
-                      <path
-                        d="M17 22H7C6.59 22 6.25 21.66 6.25 21.25C6.25 20.84 6.59 20.5 7 20.5H17C17.41 20.5 17.75 20.84 17.75 21.25C17.75 21.66 17.41 22 17 22Z"
-                        fill="#3F46F9" />
-                      <path
-                        d="M14.5 14.75H9.5C9.09 14.75 8.75 14.41 8.75 14C8.75 13.59 9.09 13.25 9.5 13.25H14.5C14.91 13.25 15.25 13.59 15.25 14C15.25 14.41 14.91 14.75 14.5 14.75Z"
-                        fill="#3F46F9" />
+                    <p class="text-sm">Parking Lots</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.4" d="M16.77 18.98H7.23C6.81 18.98 6.43 18.71 6.29 18.32L2.13 6.67001C1.8 5.74001 2.86 4.95001 3.65 5.52001L7.65 8.38001C8.18 8.76001 8.94 8.53001 9.17 7.92001L11.06 2.88001C11.38 2.01001 12.61 2.01001 12.93 2.88001L14.82 7.92001C15.05 8.54001 15.8 8.76001 16.34 8.38001L20.34 5.52001C21.14 4.95001 22.19 5.75001 21.86 6.67001L17.7 18.32C17.57 18.71 17.19 18.98 16.77 18.98Z" fill="#3F46F9"/>
+                      <path d="M17 22H7C6.59 22 6.25 21.66 6.25 21.25C6.25 20.84 6.59 20.5 7 20.5H17C17.41 20.5 17.75 20.84 17.75 21.25C17.75 21.66 17.41 22 17 22Z" fill="#3F46F9"/>
+                      <path d="M14.5 14.75H9.5C9.09 14.75 8.75 14.41 8.75 14C8.75 13.59 9.09 13.25 9.5 13.25H14.5C14.91 13.25 15.25 13.59 15.25 14C15.25 14.41 14.91 14.75 14.5 14.75Z" fill="#3F46F9"/>
                     </svg>
                   </div>
                 </div>
-                <div class="flex gap-14 justify-between">
+                <div class="flex gap-4 sm:gap-14 justify-between pr-4">
                   <div class="flex flex-col gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">A1</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="A1" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">A1</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">A2</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="A2" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">A2</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="A3">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col justify-stretch gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">A4</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="A4" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">A4</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="A5">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
-                    <div
-                      class="flex flex-col justify-start gap-1 p-[10px_20px] bg-[#EBECFD] w-[111px] border-r-4 border-[#3F46F9]">
-                      <div class="w-[72px] h-[42px] flex flex-col justify-start items-center">
-                        <p class="text-[#3F46F9] font-extrabold">Selected</p>
-                        <p class="text-[#9F9FB5]">A5</p>
+                    <div class="parking-slot selected flex flex-col justify-start gap-1 p-[10px_16px] sm:p-[10px_20px] bg-[#EBECFD] w-[90px] sm:w-[111px] border-r-4 border-[#3F46F9] rounded-lg cursor-pointer" data-slot="A6" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex flex-col justify-start items-center">
+                        <p class="text-[#3F46F9] font-extrabold text-xs">Selected</p>
+                        <p class="text-[#9F9FB5] font-semibold">A6</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <hr class="border-dashed border-4 border-[#ECECEF]" />
-              <div class="flex flex-col gap-5">
-                <div class="flex gap-3">
-                  <p
-                    class="flex rounded-xl items-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-fit">
-                    B
-                  </p>
+
+              <!-- Section B -->
+              <div class="flex flex-col gap-5 parking-section" data-section="B">
+                <div class="flex gap-3 items-center">
+                  <p class="flex rounded-xl items-center justify-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-[50px] h-[50px] font-bold text-lg shadow-sm">B</p>
                   <div class="flex items-center gap-1 text-[#9F9FB5]">
-                    <p>Parking Lots</p>
+                    <p class="text-sm">Parking Lots</p>
                   </div>
                 </div>
-                <div class="flex gap-14 justify-between">
+                <div class="flex gap-4 sm:gap-14 justify-between pr-4">
                   <div class="flex flex-col gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">B1</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="B1" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">B1</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">B2</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="B2" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">B2</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="B3">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col justify-stretch gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">B4</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="B4" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">B4</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="B5">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">B5</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="B6" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">B6</div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <hr class="border-dashed border-4 border-[#ECECEF]" />
-              <div class="flex flex-col gap-5">
-                <div class="flex gap-3">
-                  <p
-                    class="flex rounded-xl items-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-fit">
-                    C
-                  </p>
+
+              <!-- Section C -->
+              <div class="flex flex-col gap-5 parking-section" data-section="C">
+                <div class="flex gap-3 items-center">
+                  <p class="flex rounded-xl items-center justify-center gap-1 text-[#04031F] p-[12px_20px] bg-white w-[50px] h-[50px] font-bold text-lg shadow-sm">C</p>
                   <div class="flex items-center gap-1 text-[#9F9FB5]">
-                    <p>Parking Lots</p>
+                    <p class="text-sm">Parking Lots</p>
                   </div>
                 </div>
-                <div class="flex gap-14 justify-between">
+                <div class="flex gap-4 sm:gap-14 justify-between pr-4">
                   <div class="flex flex-col gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="C1">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">C2</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="C2" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">C2</div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="C3">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col justify-stretch gap-[10px]">
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="C4">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">
-                        <img src="./assets/img/porsche.png" alt="" />
+                    <div class="parking-slot occupied flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#F5F5F5] w-[90px] sm:w-[111px] border border-[#ECECEF] cursor-not-allowed rounded-lg opacity-60" data-slot="C5">
+                      <div class="w-full h-[42px] flex justify-center items-center">
+                        <img src="./assets/img/porsche.png" alt="occupied" class="max-h-full object-contain" />
                       </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1 text-[#9F9FB5] p-[10px_20px] bg-[#FFFFFF] w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer">
-                      <div class="w-[72px] h-[42px] flex justify-start items-center">C5</div>
+                    <div class="parking-slot flex items-center gap-1 text-[#9F9FB5] p-[10px_16px] sm:p-[10px_20px] bg-[#FFFFFF] w-[90px] sm:w-[111px] border border-[#ECECEF] hover:bg-[#EBECFD] cursor-pointer transition-colors rounded-lg" data-slot="C6" onclick="selectSlot(this)">
+                      <div class="w-full h-[42px] flex justify-start items-center font-semibold">C6</div>
                     </div>
                   </div>
                 </div>
@@ -315,84 +218,108 @@
           </div>
         </div>
       </div>
+
+      <!-- ===== BOTTOM NAV ===== -->
       <div
         id="Bottom-nav"
-        class="fixed bottom-[30px] mx-3 w-full max-w-[616px] flex p-[20px_16px] justify-between items-center rounded-[18px] bg-white z-10">
-        <div class="flex flex-col w-full justify-start items-center">
-          <p class="text-lg text-[#070625] font-semibold w-full">Angga Park</p>
+        class="fixed bottom-[20px] sm:bottom-[30px] left-1/2 -translate-x-1/2 w-[calc(100%-24px)] sm:w-full max-w-[616px] flex p-[16px] sm:p-[20px_16px] justify-between items-center rounded-[18px] bg-white z-10 shadow-lg">
+        <div class="flex flex-col w-full justify-start items-start">
+          <p class="text-base sm:text-lg text-[#070625] font-semibold w-full">Alif Park</p>
           <div class="w-full flex items-center gap-[10px]">
             <div class="flex items-center gap-1 text-[#9F9FB5]">
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5" />
-                <path
-                  d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5" />
-                <path
-                  d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M4.15748 3.66665H4.16518"
-                  stroke="#9F9FB5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M12.8241 11.6666H12.8318"
-                  stroke="#9F9FB5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.88 3.06667C2.41333 0.760003 5.88667 0.760003 6.41333 3.06667C6.72667 4.42 5.86667 5.56667 5.12 6.28C4.57333 6.8 3.71333 6.79334 3.16667 6.28C2.42667 5.56667 1.56667 4.42 1.88 3.06667Z" stroke="#9F9FB5" stroke-width="1.5"/>
+                <path d="M10.5467 11.0667C11.08 8.76 14.5733 8.76 15.1067 11.0667C15.42 12.42 14.56 13.5667 13.8067 14.28C13.26 14.8 12.3933 14.7933 11.8467 14.28C11.0933 13.5667 10.2333 12.42 10.5467 11.0667Z" stroke="#9F9FB5" stroke-width="1.5"/>
+                <path d="M8.5 3.33331H10.2867C11.52 3.33331 12.0933 4.85998 11.1667 5.67331L5.84 10.3333C4.91333 11.14 5.48667 12.6666 6.71333 12.6666H8.5" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.15748 3.66665H4.16518" stroke="#9F9FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.8241 11.6666H12.8318" stroke="#9F9FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <p>1.3km</p>
+              <p class="text-sm">1.3km</p>
             </div>
             <div class="flex items-center gap-1 text-[#9F9FB5]">
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M8.5 4V12"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z"
-                  stroke="#9F9FB5"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.28125 9.55325C6.28125 10.4132 6.94125 11.1066 7.76125 11.1066H9.43458C10.1479 11.1066 10.7279 10.4999 10.7279 9.75325C10.7279 8.93992 10.3746 8.65325 9.84792 8.46658L7.16125 7.53325C6.63458 7.34658 6.28125 7.05992 6.28125 6.24658C6.28125 5.49992 6.86125 4.89325 7.57458 4.89325H9.24792C10.0679 4.89325 10.7279 5.58658 10.7279 6.44658" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 4V12" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 14.6666C12.1819 14.6666 15.1667 11.6819 15.1667 7.99998C15.1667 4.31808 12.1819 1.33331 8.5 1.33331C4.8181 1.33331 1.83333 4.31808 1.83333 7.99998C1.83333 11.6819 4.8181 14.6666 8.5 14.6666Z" stroke="#9F9FB5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <p>$5/hr</p>
+              <p class="text-sm">$5/hr</p>
             </div>
           </div>
         </div>
         <div class="w-full flex justify-end">
-          <button class="font-semibold p-[12px_24px] rounded-full bg-[#4041DA] text-white">
+          <a href="parking-details.html" class="font-semibold p-[10px_20px] sm:p-[12px_24px] rounded-full bg-[#4041DA] text-white hover:bg-[#3334c0] transition-colors text-sm sm:text-base whitespace-nowrap">
             Book Now
-          </button>
+          </a>
         </div>
       </div>
     </section>
+
+    <script>
+      // Toggle heart/favorite
+      function toggleHeart(btn) {
+        const svg = btn.querySelector('.heart-icon');
+        const isFilled = svg.getAttribute('fill') === '#FF4B4B';
+        if (isFilled) {
+          svg.setAttribute('fill', 'none');
+          svg.querySelector('path').setAttribute('stroke', '#070625');
+        } else {
+          svg.setAttribute('fill', '#FF4B4B');
+          svg.querySelector('path').setAttribute('stroke', '#FF4B4B');
+        }
+      }
+
+      // Select parking slot
+      let selectedSlot = 'A6';
+
+      function selectSlot(element) {
+        // Don't select occupied slots
+        if (element.classList.contains('occupied')) return;
+
+        // Remove selected from all slots
+        document.querySelectorAll('.parking-slot').forEach(slot => {
+          if (slot.classList.contains('selected')) {
+            slot.classList.remove('selected');
+            slot.classList.add('flex');
+            slot.classList.remove('flex-col');
+            // Reset to normal slot appearance
+            slot.style.backgroundColor = '';
+            slot.style.borderRight = '';
+            const inner = slot.querySelector('div');
+            if (inner) {
+              inner.innerHTML = `<div class="w-full h-[42px] flex justify-start items-center font-semibold">${slot.dataset.slot}</div>`;
+            }
+          }
+        });
+
+        // Add selected to clicked slot
+        element.classList.add('selected');
+        element.style.backgroundColor = '#EBECFD';
+        element.style.borderRight = '4px solid #3F46F9';
+
+        const innerDiv = element.querySelector('div');
+        innerDiv.innerHTML = `
+          <div class="w-full h-[42px] flex flex-col justify-start items-center">
+            <p class="text-[#3F46F9] font-extrabold text-xs">Selected</p>
+            <p class="text-[#9F9FB5] font-semibold">${element.dataset.slot}</p>
+          </div>
+        `;
+
+        selectedSlot = element.dataset.slot;
+      }
+
+      // Floor tab switching
+      document.querySelectorAll('.floor-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Reset all tabs
+          document.querySelectorAll('.floor-tab').forEach(t => {
+            t.classList.remove('bg-[#4041DA]');
+            t.classList.add('bg-[#04031F]');
+          });
+          // Activate clicked tab
+          this.classList.remove('bg-[#04031F]');
+          this.classList.add('bg-[#4041DA]');
+        });
+      });
+    </script>
   </body>
 </html>
